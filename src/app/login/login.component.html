@@ -1,0 +1,40 @@
+<div class="main-form">
+    <mat-card>
+        <div class="head-login">
+            <mat-card class="head-log">
+                <h3>
+                    SAMPLE APP
+                </h3>
+            </mat-card>
+        </div>
+        <form (ngSubmit)="login()" name="loginForm" [formGroup]="loginForm">
+            <mat-form-field class="form">
+                <mat-label>Login Id</mat-label>
+                <input formControlName="email" matInput type="email" [(ngModel)]="user.email" id="email" name="email"
+                    placeholder="Enter Login email-id" required>
+                <mat-error>
+                    Required email address
+                </mat-error>
+            </mat-form-field>
+
+
+            <mat-form-field class="form">
+                <mat-label>Password</mat-label>
+                <input formControlName="password" matInput type="password" [(ngModel)]="user.password" required
+                    id="password" name="password">
+
+                <mat-error>
+                    Password is required
+                </mat-error>
+            </mat-form-field>
+
+            <section>
+                <div class="example-button-row">
+                    <button mat-raised-button color="primary">Login</button>
+                    <!-- <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a> -->
+                </div>
+            </section>
+
+        </form>
+    </mat-card>
+</div>

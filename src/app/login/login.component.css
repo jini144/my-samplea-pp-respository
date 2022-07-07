@@ -1,0 +1,34 @@
+.form {
+    display: grid;
+    /* appearance: fill; */
+}
+
+.head-login {
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+
+.head-log {
+    background-color: rgb(77, 32, 102);
+    color: aliceblue;
+
+}
+
+.main-form {
+    margin: 7cm 18cm;
+    width: 10cm;
+}
+
+section {
+    display: table;
+}
+
+
+
+.example-button-row {
+    /* display: table-cell; */
+    width: 490px;
+    margin-left: 3cm;
+
+}
